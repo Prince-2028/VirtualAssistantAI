@@ -1,9 +1,9 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 
 const Button = () => {
   const [voiceText, setVoiceText] = useState("");
   console.log(voiceText);
-  
+
   const SpeechRecognition =
     window.SpeechRecognition || window.webkitSpeechRecognition;
   const recognition = new SpeechRecognition();
